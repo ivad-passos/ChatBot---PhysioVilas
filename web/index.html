@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioVilas — Simulador de Atendimento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Cabeçalho estilo WhatsApp -->
+    <header class="chat-header">
+      <div class="avatar">PV</div>
+      <div class="header-info">
+        <span class="header-name">PhysioVilas</span>
+        <span class="header-status" id="status">Conectando...</span>
+      </div>
+    </header>
+
+    <!-- Área de mensagens -->
+    <main class="chat-messages" id="messages"></main>
+
+    <!-- Campo de envio -->
+    <footer class="chat-input">
+      <input
+        type="text"
+        id="input"
+        placeholder="Digite uma mensagem"
+        autocomplete="off"
+      />
+      <button id="send-btn" aria-label="Enviar">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path fill="currentColor" d="M1.101 21.757 23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"/>
+        </svg>
+      </button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
